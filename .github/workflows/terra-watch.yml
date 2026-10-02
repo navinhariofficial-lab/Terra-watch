@@ -12,6 +12,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python dwc_terra_watch.py
+      - run: python dwc_terra_watch.py --test
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
